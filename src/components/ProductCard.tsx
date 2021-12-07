@@ -19,6 +19,7 @@ export interface Props {
 }
 
 export const ProductCard = ({ product, className, style, children, onChange, value, initialValues }: Props) => {
+
   const {
     increaseBy,
     counter,
