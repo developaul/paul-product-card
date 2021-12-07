@@ -18,7 +18,7 @@ export const ProductImage = ({
 }: Props) => {
   const { product } = useContext(ProductContext)
 
-  const imageToShow = useMemo(() => img || product.img || noImage, [img, product.img])
+  const imageToShow = useMemo(() => img || product?.img || noImage, [img, product?.img])
 
   return (
     <img

@@ -17,7 +17,7 @@ export const ProductTitle = ({
 }: Props) => {
   const { product } = useContext(ProductContext)
 
-  const titleToShow = useMemo(() => title || product.title, [product.title, title])
+  const titleToShow = useMemo(() => title || product?.title, [product?.title, title])
 
   return (
     <span
